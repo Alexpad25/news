@@ -1,0 +1,27 @@
+.card-btn_add {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.card-item {
+  height: 460px;
+}
+
+.card-header-text {
+  margin: 0;
+}
+
+.mat-card-title {
+  font-size: 18px;
+}
+
+.card-item-btn_detail {
+  position: absolute;
+  bottom: 18px;
+}
+
+.card-item-category {
+  font-size: 14px;
+  font-style: italic;
+}

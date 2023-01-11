@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { DialogNewsComponent } from './dialog-news.component';
+
+describe('DialogNewsComponent', () => {
+  let component: DialogNewsComponent;
+  let fixture: ComponentFixture<DialogNewsComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ DialogNewsComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(DialogNewsComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

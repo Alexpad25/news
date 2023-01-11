@@ -1,0 +1,26 @@
+<form [formGroup]="addNews" novalidate>
+  <div class="news-form-fields">
+    <mat-form-field appearance="fill">
+      <mat-label>Название</mat-label>
+      <input matInput type="text" formControlName="name" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Описание</mat-label>
+      <input matInput type="text" formControlName="description" />
+    </mat-form-field>
+
+    <div class="upload">
+      <button type="button" mat-raised-button (click)="fileInput.click()">Choose File</button>
+      <input hidden (change)="onFileSelected()" #fileInput type="file" id="file" formControlName="image" >
+    </div>
+
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onNoClick()">Закрыть</button>
+    <button mat-button [mat-dialog-close]="addNews" cdkFocusInitial>Сохранить</button>
+  </div>
+
+</form>
+
+

@@ -1,0 +1,14 @@
+<div class="card-el">
+  <span class="card-el-title">
+    <h1>{{ oneNews?.title }}</h1>
+  </span>
+  <div class="card-el-category">#{{ oneNews?.categoryType }}</div>
+  <div class="card-item-data">{{ oneNews?.publishedDate | date:'MMM d, y, h:mm:ss a' }}</div>
+<!--  <div class="card-el-image">-->
+<!--    <img mat-card-image src="{{ oneNews?.titleImageUrl }}" alt="{{ oneNews?.title }}">-->
+<!--  </div>-->
+  <div class="card-el-text" [innerHtml]="oneNews?.text"></div>
+</div>
+
+
+
