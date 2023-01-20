@@ -1,45 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
-  display: block;
-  width: 100%;
-  padding: 0 15px;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	padding: 0 15px;
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    width: fit-content;
-  }
+	.container {
+		width: fit-content;
+	}
 }
 
 header {
-  background: #014076;
-  color: white;
-  height: 60px;
-  display: flex;
-  align-items: center;
+	background: #014076;
+	color: white;
+	height: 60px;
+	display: flex;
+	align-items: center;
 }
 
 footer {
-  background: #014076;
-  color: white;
-  height: 60px;
-  margin-top: 60px;
-  display: flex;
-  align-items: center;
+	background: #014076;
+	color: white;
+	height: 60px;
+	margin-top: 60px;
+	display: flex;
+	align-items: center;
 }
 
 a.photo.photo-first img {
-  max-width: 100%;
-  width: 100%;
+	max-width: 100%;
+	width: 100%;
 }
 
 a.photo img {
-  max-width: 100%;
-  width: 331px;
+	max-width: 100%;
+	width: 331px;
 }

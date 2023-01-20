@@ -8,12 +8,17 @@
 
       <mat-card class="card-item mat-elevation-z4">
         <mat-card-header>
-          <mat-card-title>{{ item?.title.substring(0, 39)+'...' }}</mat-card-title>
+          <mat-card-title>{{ item?.title?.substring(0, 39)+'...' }}</mat-card-title>
         </mat-card-header>
-        <img mat-card-image src="{{ item?.titleImageUrl }}" alt="{{ item?.title }}">
+
+        <img *ngIf="item?.titleImageUrl; else noimage" mat-card-image src="{{ item?.titleImageUrl }}" alt="{{ item?.title }}">
+        <ng-template #noimage >
+          <img mat-card-image src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Noimage.svg/1479px-Noimage.svg.png" alt="no image">
+        </ng-template>
+
         <mat-card-content>
           <p>
-            {{ item?.description.substring(0, 80)+'...' }}
+            {{ item?.description?.substring(0, 80)+'...' }}
           </p>
         </mat-card-content>
         <div class="card-item-category">#{{ item?.categoryType }}</div>
@@ -25,4 +30,8 @@
 
     </div>
   </div>
+</div>
+
+<div class="news_loader">
+  <div *ngIf="loadlist" class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
 </div>
